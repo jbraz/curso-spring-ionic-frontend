@@ -38,7 +38,8 @@ import { ProdutoService } from '../services/domain/produto.service';
     AuthService,
     StorageService,
     ClienteService,
-    ProdutoService
+    ProdutoService,
+    CartService
   ]
 })
 export class AppModule {}
