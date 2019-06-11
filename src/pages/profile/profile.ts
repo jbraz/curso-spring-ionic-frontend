@@ -4,7 +4,7 @@ import { StorageService } from '../../services/storage.service';
 import { ClienteDTO } from '../../models/cliente.dto';
 import { API_CONFIG } from '../../config/api.config';
 import { ClienteService } from '../../services/domain/cliente.service';
-import { CameraOptions, Camera } from '@ionic-native/camera';
+import { CameraOptions, Camera } from '@ionic-native/camera/ngx';
 /**
  * Generated class for the ProfilePage page.
  *
@@ -75,6 +75,7 @@ export class ProfilePage {
      this.picture = 'data:image/png;base64,' + imageData;
      this.cameraOn = false;
     }, (err) => {
+      this.cameraOn = false;
     });
   }
 
